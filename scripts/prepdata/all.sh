@@ -51,7 +51,7 @@ unadjusted_file_path="/data/gse49711/unadjusted.csv"
 
 #if [ ! -f ${unadjusted_file_path} ]
 #then
-    Rscript /scripts/prepdata/gse49711.R
+    Rscript /scripts/prepdata/gse49711.R "${unadjusted_file_path}"
 #fi
 
 #########################

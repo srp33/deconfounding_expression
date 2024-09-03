@@ -47,7 +47,4 @@ metadata = as_tibble(as.data.frame(getGEO("GSE49711"))) %>%
 
 data = inner_join(metadata, expr_data, by="Sample_ID")
 
-#print(table(data$Sex))
-#print(table(data$MYCN_Status))
-
 write_csv(data, out_file_path)
